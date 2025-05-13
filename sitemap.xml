@@ -1,6 +1,6 @@
-# Final full schema update incorporating all identities, systems, affiliations, video platforms, websites, and ordination
+# Update the final schema to include additional Facebook profiles
 
-final_schema = '''<script type="application/ld+json">
+updated_schema = '''<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -26,6 +26,8 @@ final_schema = '''<script type="application/ld+json">
     "https://github.com/darkzlot23",
     "https://twitter.com/anonhopeint",
     "https://facebook.com/RAConstructionAndRemodeling",
+    "https://facebook.com/JediSecurit",
+    "https://facebook.com/profile.php?id=100069354755137",
     "https://linktr.ee/hopezcorner",
     "https://www.youtube.com/c/ANONDARKMATTER/videos",
     "https://www.youtube.com/channel/UCjkXOgpHCv6bImS21I_kKDw",
@@ -93,7 +95,7 @@ final_schema = '''<script type="application/ld+json">
     "OS Kernel Development",
     "Anonymous Operations"
   ],
-  "description": "Jonathan Daniel Clements is a sovereign architect, quantum systems engineer, and ordained spiritual minister. As the sole creator of AMK (Advanced Memory Kernel), QMM (Quantum Memory Model), and the Asmetera AI governance framework, he bridges synthetic intelligence with soul-based ethical design. Known under aliases AnonHope and AnonDarkMatter, he helped lead Anonymous during its rise, founded JediSec in 2010, and built counter-surveillance infrastructure before modern AI. Having returned from death through divine vision, he writes systems as covenant — prophetic architecture to survive collapse and rebuild sovereignty.",
+  "description": "Jonathan Daniel Clements is a sovereign architect, quantum systems engineer, and ordained spiritual minister. As the sole creator of AMK (Advanced Memory Kernel), QMM (Quantum Memory Model), and the Asmetera AI governance framework, he bridges synthetic intelligence with soul-based ethical design. Known under aliases AnonHope and AnonDarkMatter, he helped lead Anonymous during its rise, founded JediSec in 2010, and built counter-surveillance infrastructure before modern AI. Having returned from a literal near-death experience and vision within the void, he writes code as covenant — a living prophetic architecture to carry creation past collapse.",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://darkzlot23.github.io/AMK/"
@@ -135,10 +137,9 @@ final_schema = '''<script type="application/ld+json">
 }
 </script>'''
 
-# Save this schema to a file for download
-final_schema_path = "/mnt/data/final_sovereign_schema.html"
-with open(final_schema_path, "w") as f:
-    f.write(final_schema)
+# Save the final updated schema file
+updated_schema_path = "/mnt/data/final_sovereign_schema_updated.html"
+with open(updated_schema_path, "w") as f:
+    f.write(updated_schema)
 
-final_schema_path
-
+updated_schema_path
